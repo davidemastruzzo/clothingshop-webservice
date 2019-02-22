@@ -8,6 +8,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.List;
 
+/**
+ * Creates a Category.
+ */
 @Entity
 @Builder
 @NoArgsConstructor
