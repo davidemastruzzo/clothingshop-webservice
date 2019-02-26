@@ -2,11 +2,9 @@ package com.netcetera.clothingshop.domain;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
+
 
 /**
  * Creates a Category.
@@ -18,7 +16,7 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "category")
-public class Category {
+public class Category extends BaseEntity {
 
     /**
      * Creates the Field 'name' on the database.

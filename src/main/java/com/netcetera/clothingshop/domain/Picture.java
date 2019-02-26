@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Table(name = "picture")
-public class Picture {
+public class Picture extends BaseEntity {
 
     /**
      * Creates the field 'name' on the database.
@@ -25,7 +25,7 @@ public class Picture {
     /**
      * Creates the field 'image' on the database.
      */
-    @Column(name = "image", nullable = true,unique = false)
+    @Column(name = "image", nullable = true, unique = false)
     private byte[] image;
 
     /**

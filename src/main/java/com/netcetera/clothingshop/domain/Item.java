@@ -15,7 +15,7 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "item")
-public class Item {
+public class Item extends BaseEntity {
 
     /**
      * Creates the Field 'name' on the database.
