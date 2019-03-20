@@ -1,13 +1,20 @@
 package com.netcetera.clothingshop.domain;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.List;
 
-/**
- * Creates a Item.
- */
+
 @Entity
 @Builder
 @NoArgsConstructor
@@ -33,7 +40,7 @@ public class Item extends BaseEntity {
      * Maps all linking pictures to a item.
      */
     @Column(name = "pictures")
-    @OneToMany
+    @OneToMany(mappedBy = "item")
     private List<Picture> pictures;
 
     /**

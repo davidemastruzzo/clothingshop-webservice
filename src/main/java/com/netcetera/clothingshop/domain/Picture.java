@@ -1,12 +1,17 @@
 package com.netcetera.clothingshop.domain;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
-/**
- * Creates a picture.
- */
 @Entity
 @Builder
 @NoArgsConstructor
@@ -25,8 +30,8 @@ public class Picture extends BaseEntity {
     /**
      * Creates the field 'image' on the database.
      */
-    @Column(name = "image", nullable = true, unique = false)
-    private byte[] image;
+    @Column(name = "imageURL", nullable = true, unique = false)
+    private String imageURL;
 
     /**
      * Links this picture to a location.

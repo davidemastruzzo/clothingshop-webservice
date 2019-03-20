@@ -1,14 +1,18 @@
 package com.netcetera.clothingshop.domain;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.List;
 
 
-/**
- * Creates a Category.
- */
 @Entity
 @Builder
 @NoArgsConstructor
