@@ -16,6 +16,7 @@ public class PictureConverter {
 
     static PictureDto convert(@NonNull Picture picture) {
         return PictureDto.builder()
+                .id(picture.getId())
                 .imageURL(picture.getImageURL())
                 .build();
     }
