@@ -1,7 +1,6 @@
-package com.netcetera.clothingshop.converter;
+package com.netcetera.clothingshop.picture;
 
 import com.netcetera.clothingshop.domain.Picture;
-import com.netcetera.clothingshop.dto.PictureDto;
 import lombok.NonNull;
 
 import java.util.List;

@@ -5,7 +5,7 @@ public interface WebServiceUrl {
   String Prefix = "/rest";
 
   String Image = Prefix + "/image";
-  String Items = Prefix + "/items";
+  String Items = Prefix + "/item";
   String Order = Prefix + "/order";
   String Login = Prefix + "/account";
 }

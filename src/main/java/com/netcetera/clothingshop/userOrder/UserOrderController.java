@@ -1,15 +1,15 @@
-package com.netcetera.clothingshop.controller;
+package com.netcetera.clothingshop.userOrder;
 
 import com.netcetera.clothingshop.domain.Item;
 import com.netcetera.clothingshop.domain.UserOrder;
-import com.netcetera.clothingshop.dto.ItemDto;
-import com.netcetera.clothingshop.dto.UserOrderDto;
+import com.netcetera.clothingshop.item.ItemDto;
 import com.netcetera.clothingshop.repository.ItemRepository;
 import com.netcetera.clothingshop.repository.OrderRepository;
 import com.netcetera.rest.WebServiceUrl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,6 +42,12 @@ public class UserOrderController {
                 .build();
         orderRepository.save(userOrder);
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<UserOrderDto>> getAllOrders(){
+        List<UserOrderDto> userOrderDtos = UserOrderConverter.convert(orderRepository.findAll());
+        return new ResponseEntity<>(userOrderDtos,HttpStatus.OK);
     }
 
     private Item findItem(ItemDto itemDto){

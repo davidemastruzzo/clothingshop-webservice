@@ -1,19 +1,15 @@
-package com.netcetera.clothingshop.converter;
+package com.netcetera.clothingshop.item;
 
+import com.netcetera.clothingshop.category.CategoryConverter;
 import com.netcetera.clothingshop.domain.Item;
-import com.netcetera.clothingshop.dto.ItemDto;
-import com.netcetera.clothingshop.repository.ItemRepository;
+import com.netcetera.clothingshop.picture.PictureConverter;
 import lombok.NonNull;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
 public class ItemConverter {
-
-    @Autowired
-    private static ItemRepository itemRepository;
 
     private ItemConverter() {
         //no instances needed

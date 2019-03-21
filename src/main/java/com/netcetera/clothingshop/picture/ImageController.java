@@ -1,4 +1,4 @@
-package com.netcetera.clothingshop.controller;
+package com.netcetera.clothingshop.picture;
 
 import java.io.IOException;
 

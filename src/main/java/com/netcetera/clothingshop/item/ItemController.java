@@ -1,7 +1,5 @@
-package com.netcetera.clothingshop.controller;
+package com.netcetera.clothingshop.item;
 
-import com.netcetera.clothingshop.converter.ItemConverter;
-import com.netcetera.clothingshop.dto.ItemDto;
 import com.netcetera.clothingshop.repository.ItemRepository;
 import com.netcetera.rest.WebServiceUrl;
 import org.springframework.beans.factory.annotation.Autowired;

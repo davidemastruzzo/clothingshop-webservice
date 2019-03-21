@@ -1,5 +1,6 @@
-package com.netcetera.clothingshop.dto;
+package com.netcetera.clothingshop.userOrder;
 
+import com.netcetera.clothingshop.item.ItemDto;
 import lombok.Builder;
 import lombok.Getter;
 

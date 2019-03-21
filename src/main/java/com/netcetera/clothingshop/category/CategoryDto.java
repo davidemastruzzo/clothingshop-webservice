@@ -1,4 +1,4 @@
-package com.netcetera.clothingshop.dto;
+package com.netcetera.clothingshop.category;
 
 import lombok.Builder;
 import lombok.Getter;
