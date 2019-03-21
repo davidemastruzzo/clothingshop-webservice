@@ -5,6 +5,7 @@ import lombok.Getter;
 
 @Builder
 @Getter
-public class PictureDto {
+public class PictureDto{
+    private long id;
     private String imageURL;
 }

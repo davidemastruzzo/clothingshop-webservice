@@ -2,13 +2,18 @@ package com.netcetera.clothingshop.converter;
 
 import com.netcetera.clothingshop.domain.Item;
 import com.netcetera.clothingshop.dto.ItemDto;
+import com.netcetera.clothingshop.repository.ItemRepository;
 import lombok.NonNull;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
 public class ItemConverter {
+
+    @Autowired
+    private static ItemRepository itemRepository;
 
     private ItemConverter() {
         //no instances needed
