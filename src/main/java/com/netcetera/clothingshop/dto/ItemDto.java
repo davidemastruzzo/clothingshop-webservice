@@ -10,7 +10,7 @@ import java.util.List;
 public class ItemDto {
     private long id;
     private String name;
-    private int price;
+    private String price;
     private String category;
     private List<PictureDto> pictures;
 }

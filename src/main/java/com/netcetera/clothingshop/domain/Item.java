@@ -35,7 +35,7 @@ public class Item extends BaseEntity {
      * Creates the Field 'price' on the database.
      */
     @Column(name = "price", nullable = false)
-    private int price;
+    private String price;
 
     /**
      * Maps all linking pictures to a item.
